@@ -15,11 +15,11 @@ def part1():
 
     for command in input:
         match command:
-            case ["forward", int(o)]:
+            case ["forward", o]:
                 horizontal += o
-            case ["down", int(o)]:
+            case ["down", o]:
                 depth += o
-            case ["up", int(o)]:
+            case ["up", o]:
                 depth -= o
 
 
@@ -34,12 +34,12 @@ def part2():
 
     for command in input:
         match command:
-            case ["forward", int(o)]:
+            case ["forward", o]:
                 horizontal += o
                 depth += aim * o
-            case ["down", int(o)]:
+            case ["down", o]:
                 aim += o
-            case ["up", int(o)]:
+            case ["up", o]:
                 aim -= o
 
     logging.info(depth * horizontal)

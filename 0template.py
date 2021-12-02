@@ -1,6 +1,7 @@
 import logging
 from aocd import submit
 from aocd.models import Puzzle
+logging.basicConfig(level=logging.INFO)
 
 puzzle = Puzzle(year=2021, day=)
 input = [line.split() for line in puzzle.input_data.splitlines()]

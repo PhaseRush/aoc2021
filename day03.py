@@ -36,13 +36,7 @@ def histo(candidates: List[str], one_greater: str, zero_greater: str) -> int:
     for idx in range(len(input[0])):
         if len(candidates) == 1:
             break
-        num0 = 0
-        num1 = 0
-        for num in candidates:
-            if num[idx] == '1':
-                num1 += 1
-            else:
-                num0 += 1
+        num0 = len(candidates) - (num1 := sum(num[idx] == '1' for num in candidates))
         if num1 >= num0:
             candidates = [num for num in candidates if num[idx] == one_greater]
         else:

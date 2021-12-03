@@ -3,19 +3,22 @@ from aocd import submit
 from aocd.models import Puzzle
 logging.basicConfig(level=logging.INFO)
 
-puzzle = Puzzle(year=2021, day=)
+DAY =
+
+
+puzzle = Puzzle(year=2021, day=DAY)
 input = [line.split() for line in puzzle.input_data.splitlines()]
 
 
 def part1():
     logging.info()
-    submit(, part='a', day=, year=2021)
+    submit(, part='a', day=DAY, year=2021)
 
 
 def part2():
 
     logging.info()
-    submit(, part='b', day=, year=2021)
+    submit(, part='b', day=DAY, year=2021)
 
 
 if __name__ == '__main__':
